@@ -1,0 +1,44 @@
+:root {
+  --bc-primary-color: #ff765e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background-color: #f3d2cd;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Header Style */
+
+header {
+  background-color: var(--bc-primary-color);
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  color: #fff;
+  font-size: .8rem;
+}
+
+header .balance-amount {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
