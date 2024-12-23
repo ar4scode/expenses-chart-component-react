@@ -15,6 +15,7 @@ body {
 
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; /* Centers vertically */
   height: 100vh; /* Full height of the viewport */
@@ -24,11 +25,15 @@ body {
 
 header {
   background-color: var(--bc-primary-color);
-  width: 25rem;
-  border-radius: 1rem;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
+  width: 29rem;
+}
+
+header,
+.container {
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 header p {
@@ -42,3 +47,55 @@ header .balance-amount {
   margin-top: 0.5rem;
 }
 
+.container {
+  background-color: #fff;
+  margin-top: 1rem;
+}
+
+.container > p {
+  color: #2e2424;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-left: 0.5rem;
+}
+
+
+.charts-container {
+  display: flex;
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.money-chart {
+  background-color: #664343;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: .5rem;
+  opacity: 0;
+}
+
+.percentage-chart {
+  width: 2rem;
+  height: 5rem;
+  border-radius: .5rem;
+  margin: .5rem 0;
+  background-color: #ff765e;
+  cursor: pointer;
+}
+
+.percentage-chart:hover {
+  opacity: .7;
+  transition: all .4s;
+}
+
+.days-container {
+  color: #a8a4a4;
+}
