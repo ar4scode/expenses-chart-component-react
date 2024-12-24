@@ -99,3 +99,43 @@ header .balance-amount {
 .days-container {
   color: #a8a4a4;
 }
+
+.container hr {
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+  width: 24rem;
+  margin-inline: auto;
+}
+
+footer > p {
+  margin: 1rem;
+  color: #a8a4a4;
+}
+
+footer .total-profit-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-profit-info .profit-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profit-info .profit {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+
+.profit-info p {
+  color: #a8a4a4;
+}
+
+.total-profit-info .total-money {
+  font-weight: bold;
+  margin: .5rem;
+  font-size: 3rem;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { chartData } from "../data/data";
+import Footer from "./Footer";
 
 export default function MainContent() {
   const [data, setData] = useState([]);
@@ -50,6 +51,9 @@ export default function MainContent() {
           </div>
         ))}
       </div>
+
+      <hr />
+      <Footer />
     </div>
   );
 }
