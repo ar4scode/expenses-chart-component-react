@@ -79,7 +79,6 @@ header .balance-amount {
   font-weight: bold;
   padding: 0.4rem;
   border-radius: .5rem;
-  opacity: 0;
 }
 
 .percentage-chart {
@@ -95,6 +94,7 @@ header .balance-amount {
   opacity: .7;
   transition: all .4s;
 }
+
 
 .days-container {
   color: #a8a4a4;
